@@ -1,1 +1,143 @@
-index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mega Pack: Cursos PDF + Plantillas n8n</title>
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f172a;--card:#0b1220;color-scheme:dark}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:white;color:#0b1220}
+    .container{max-width:820px;margin:28px auto;padding:18px}
+    header{display:flex;gap:12px;align-items:center}
+    .logo{width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:20px}
+    .lead{color:#374151;margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
+    .card{border-radius:12px;padding:14px;border:1px solid #e6e6e6;background:#fff}
+    .product-list{display:flex;flex-direction:column;gap:8px}
+    .product-item{display:flex;gap:10px;align-items:center}
+    .thumb{width:76px;height:56px;border-radius:6px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;color:#6b7280}
+    .buy-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .price{font-weight:700}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer}
+    .note{font-size:13px;color:#6b7280}
+    footer{margin-top:18px;font-size:13px;color:#6b7280}
+    @media(min-width:720px){.grid{grid-template-columns:1fr 320px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">ED</div>
+      <div>
+        <h1>Mega Pack: Cursos PDF + Plantillas n8n</h1>
+        <div class="lead">Entrega digital inmediata • Soporte por 48h • Garantía de funcionamiento en n8n</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div>
+        <div class="card">
+          <h3>Qué incluye</h3>
+          <ul>
+            <li>4 cursos en PDF (IA aplicada a negocios, empresa y sociedad)</li>
+            <li>5 plantillas n8n listas para importar (.json)</li>
+            <li>Guía rápida de configuración y pasos para personalizar</li>
+          </ul>
+
+          <hr />
+
+          <h4>Descripción corta</h4>
+          <p>Este paquete entrega recursos prácticos para montar automatizaciones reales con n8n y formarte con guías paso a paso. Ideal para freelancers y equipos pequeños.</p>
+
+          <div style="margin-top:10px">
+            <h4>Productos</h4>
+            <div class="product-list">
+              <div class="product-item">
+                <div class="thumb">PDF</div>
+                <div>
+                  <div><strong>Mega Pack - Cursos PDF</strong></div>
+                  <div class="note">Incluye 4 PDFs con teoría, práctica y ejercicios</div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="thumb">n8n</div>
+                <div>
+                  <div><strong>Plantillas n8n</strong></div>
+                  <div class="note">Incluye Agente de Email, Contactos, Legislación, Asistente Abogado y Ecommerce</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <h4>Instrucciones rápidas para entrega</h4>
+          <ol>
+            <li>El comprador hace el pago (PayPal/Binance Pay/Zelle).</li>
+            <li>Al confirmar, se descarga un ZIP con todos los archivos (PDF + Plantillas).</li>
+            <li>Soporte por 48 horas para ayuda con importación en n8n.</li>
+          </ol>
+
+          <p class="note">Sugerencia de precio: <strong>$20 - $30</strong> por el paquete completo (o $5-$10 por PDF y $10-$25 por plantilla compleja).</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Archivos incluidos</h4>
+          <ul>
+            <li>IA para tu Negocio: Domina la Inteligencia Artificial y Crece</li>
+            <li>IA en la Sociedad: Impacto, Aplicaciones y Futuro</li>
+            <li>El Impacto de la IA en tu Empresa: Principios Fundamentales para el Éxito</li>
+            <li>IA para tu Empresa: Impulsa tu Negocio con Inteligencia Artificial</li>
+            <li>Plantilla n8n - Agente de Email</li>
+            <li>Plantilla n8n - Agente de Contactos</li>
+            <li>Plantilla n8n - Agente de Legislación</li>
+            <li>Plantilla n8n - Asistente Abogado</li>
+            <li>Plantilla n8n - Agente Ecommerce</li>
+          </ul>
+          <a href="Mega_Pack_IA_Cursos_y_Plantillas.zip" download>📂 Descargar Mega Pack (ZIP)</a>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Comprar ahora</h3>
+          <p class="price">$20 — Mega Pack completo</p>
+          <div class="buy-row">
+            <button class="btn" id="buyPayPal" data-link="https://www.paypal.me/eduardomanuelv44">Pagar con PayPal</button>
+            <button class="btn" id="buyBinance" data-link="https://www.binance.com/pay/752420663">Pagar con Binance Pay</button>
+            <button class="btn" id="manualContact">Pagar y contactar</button>
+          </div>
+
+          <p class="note" style="margin-top:8px">Al pagar, recibirás automáticamente el enlace de descarga o se enviará manualmente vía WhatsApp/Email.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Testimonios</h4>
+          <p class="note">Incluye 1-2 frases de reseñas reales si las tienes. Si no, deja ejemplo de cliente satisfecho.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>¿Listo para vender? Sube la página a tu hosting y comparte el enlace. Tus compradores podrán pagar y descargar el paquete directamente.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('buyPayPal').addEventListener('click', function(){
+      const link = this.getAttribute('data-link');
+      window.open(link,'_blank')
+    })
+    document.getElementById('buyBinance').addEventListener('click', function(){
+      const link = this.getAttribute('data-link');
+      window.open(link,'_blank')
+    })
+    document.getElementById('manualContact').addEventListener('click', function(){
+      const phone = prompt('Escribe tu WhatsApp o email para que el comprador pueda contactarte:','');
+      if(phone) window.location = 'https://wa.me/'+phone.replace(/\D/g,'')
+    })
+  </script>
+</body>
+  </html>
+    
